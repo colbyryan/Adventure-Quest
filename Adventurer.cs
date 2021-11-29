@@ -3,6 +3,7 @@ namespace Quest
     // An instance of the Adventurer class is an object that will undergo some challenges
     public class Adventurer
     {
+        public Robe ColorfulRobe { get; }
         // This is an "immutable" property. It only has a "get".
         // The only place the Name can be set is in the Adventurer constructor
         // Note: the constructor is defined below.
@@ -17,8 +18,8 @@ namespace Quest
         {
             Name = name;
             Awesomeness = 50;
+            ColorfulRobe =
         }
-
 
         // This method returns a string that describes the Adventurer's status
         // Note one way to describe what this method does is:
